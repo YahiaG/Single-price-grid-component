@@ -1,0 +1,167 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--Light-Gray);
+}
+
+main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.component {
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.1);
+}
+.component .intro {
+  padding: 1.5rem;
+  background-color: #FFF;
+}
+@media (min-width: 768px) {
+  .component .intro {
+    padding: 2.5rem;
+    width: 600px;
+  }
+}
+.component .intro h1 {
+  color: var(--Cyan);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 1px;
+}
+@media (min-width: 768px) {
+  .component .intro h1 {
+    font-size: 1.5rem;
+  }
+}
+.component .intro .money {
+  color: var(--Bright-Yellow);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 2px yellow;
+}
+@media (min-width: 768px) {
+  .component .intro .money {
+    font-size: 1.25rem;
+  }
+}
+.component .intro .text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--Grayish-Blue);
+}
+@media (min-width: 768px) {
+  .component .intro .text {
+    max-width: 500px;
+    font-size: 15px;
+  }
+}
+.component .offer {
+  color: var(--Light-Gray);
+}
+.component .offer h2 {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+}
+.component .offer > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1.5rem;
+}
+@media (min-width: 768px) {
+  .component .offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .component .offer > div {
+    padding: 2.5rem;
+  }
+}
+.component .offer .plan {
+  background-color: var(--Cyan);
+}
+.component .offer .plan .price {
+  font-size: 2rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+.component .offer .plan .price span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: hsl(182, 47.75%, 68.35%);
+}
+.component .offer .plan p {
+  margin-bottom: 2rem;
+}
+.component .offer .plan button {
+  background-color: var(--Bright-Yellow);
+  color: inherit;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.component .offer .plan button:hover {
+  background-color: #a4c21e;
+}
+.component .offer .advantages {
+  background-color: var(--Cyan);
+  opacity: 0.8;
+}
+.component .offer .advantages ul {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
